@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (loginForm) {
       loginForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        const username = loginForm.querySelector('input[placeholder="Username"]').value;
-        const password = loginForm.querySelector('input[placeholder="Password"]').value;
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
   
         // Verifica usuario y contraseña
         if (username === 'admin' && password === '1234') {
