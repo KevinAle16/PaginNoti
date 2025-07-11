@@ -156,5 +156,50 @@ body {
     text-decoration: underline;
     color: #0056b3;
   }
+
+  #header_contenido {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Contenedor de las noticias */
+.news-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: calc(100vh - 60px); /* Ajusta 60px si tu header mide eso */
+}
+
+.news-card {
+  background: #fff;
+  margin: 20px auto;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+.news-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.news-content {
+  padding-top: 15px;
+}
+
+.news-content h2 {
+  margin: 0 0 10px;
+  color: #a00000;
+}
+
+.news-content p {
+  margin: 0;
+  line-height: 1.5;
+}
   
   
