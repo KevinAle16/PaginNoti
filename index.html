@@ -1,100 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
-<head><link rel="stylesheet" href="/css/index.css"></head>
-
+<head id="head_contenido">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Contrapeso Informativo</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
 <body>
-  <div class="container">
-    <!-- Header dinámico -->
-    <div id="header_contenido"></div>
+    <!-- Header -->
+    <header>
+        <div id="header_contenido"></div>
+    </header>
 
-    <main>
-      <!-- Zona principal de noticias -->
-      <section class="news-container">
-        <article class="news-card">
-            <center>
-          <img src="img/noticia1.jpg" alt="Noticia 1" style="width: 20%;">
-        </center>
-          <div class="news-content">
-            <h2>Título de la Noticia</h2>
-            <p>Resumen de la noticia para mostrar un preview.</p>
-          </div>
-        </article>
+    <!-- Menú lateral (partial) -->
+    <div id="menu_contenido"></div>
 
-        <!-- Puedes duplicar estos bloques -->
-        <article class="news-card">
-            <center>
-          <img src="img/noticia2.jpg" alt="Noticia 2" style="width: 20%;">
-        </center>
-          <div class="news-content">
-            <h2>Otra Noticia</h2>
-            <p>Descripción breve de la segunda noticia.</p>
-          </div>
-        </article>
-        <article class="news-card">
-            <center>
-          <img src="img/noticia2.jpg" alt="Noticia 2" style="width: 20%;">
-        </center>
-          <div class="news-content">
-            <h2>Otra Noticia</h2>
-            <p>Descripción breve de la segunda noticia.</p>
-          </div>
-        </article>
-        <article class="news-card">
-            <center>
-          <img src="img/noticia2.jpg" alt="Noticia 2" style="width: 20%;">
-        </center>
-          <div class="news-content">
-            <h2>Otra Noticia</h2>
-            <p>Descripción breve de la segunda noticia.</p>
-          </div>
-        </article>
-        <article class="news-card">
-            <center>
-          <img src="img/noticia2.jpg" alt="Noticia 2" style="width: 20%;">
-        </center>
-          <div class="news-content">
-            <h2>Otra Noticia</h2>
-            <p>Descripción breve de la segunda noticia.</p>
-          </div>
-        </article>
-        <article class="news-card">
-            <center>
-          <img src="img/noticia2.jpg" alt="Noticia 2" style="width: 20%;">
-        </center>
-          <div class="news-content">
-            <h2>Otra Noticia</h2>
-            <p>Descripción breve de la segunda noticia.</p>
-          </div>
-        </article>
-        <article class="news-card">
-            <center>
-          <img src="img/noticia2.jpg" alt="Noticia 2" style="width: 20%;">
-        </center>
-          <div class="news-content">
-            <h2>Otra Noticia</h2>
-            <p>Descripción breve de la segunda noticia.</p>
-          </div>
-        </article>
-        <article class="news-card">
-            <center>
-          <img src="img/noticia2.jpg" alt="Noticia 2" style="width: 20%;">
-        </center>
-          <div class="news-content">
-            <h2>Otra Noticia</h2>
-            <p>Descripción breve de la segunda noticia.</p>
-          </div>
-        </article>
-      </section>
-    </main>
+    <!-- Menú de usuario (partial) -->
+    <div id="user_menu_contenido"></div>
 
-    <!-- Footer dinámico -->
+    <!-- Contenido principal -->
+     <main>
+        <div class="container">
+            <section class="welcome-message">
+                <h1>Donde, con la noticia, la balanza se equilibra</h1>
+                <p>Tu fuente confiable de noticias e información actualizada sobre los eventos más relevantes a nivel Nacional e Internacional. Mantente informado con nuestros artículos cuidadosamente redactados.</p>
+            </section>
+        </div>
+
+        <div class="container" id="main-container"></div>
+    </main>    
+
+    <!-- Footer -->
     <footer>
-      <div id="footer_contenido"></div>
+        <div id="footer_contenido"></div>
     </footer>
-  </div>
 
-  <!-- Scripts necesarios -->
-  <script src="js/partials.js"></script>
-  <script src="js/index.js"></script>
+    <!-- Scripts -->
+    <script src="js/partials.js"></script>
+    <script src="js/notas.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
