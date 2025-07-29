@@ -1,0 +1,1 @@
+const imagenRuta = `imagenes/imagen_${nota.ID}.jpg`;
